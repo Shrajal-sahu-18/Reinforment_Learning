@@ -10,3 +10,5 @@ print(env.action_space.n)
 starting_state, _ = env.reset()
 
 print(starting_state)
+
+gamma = 0.99
