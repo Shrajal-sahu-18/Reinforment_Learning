@@ -31,3 +31,4 @@ for episode in range(episodes):
     else:
         env = gym.make('CliffWalking-v1')
     done = False
+    state,_ = env.reset()
