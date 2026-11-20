@@ -32,3 +32,4 @@ for episode in range(episodes):
         env = gym.make('CliffWalking-v1')
     done = False
     state,_ = env.reset()
+    action = epsilon_greedy(state)
