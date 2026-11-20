@@ -25,3 +25,6 @@ def epsilon_greedy(state):
         np.argmax(Q[state])
 for episode in range(episodes):
     render = (episode % 50 == 0)
+    if render:
+        env = gym.make('CliffWalking-v1',render_mode = "human")
+        print(f"Rendering env for episode = {episode + 1} / {episodes}")
