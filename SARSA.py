@@ -33,3 +33,6 @@ for episode in range(episodes):
     done = False
     state,_ = env.reset()
     action = epsilon_greedy(state)
+
+    total_reward = 0
+    episode_length = 0
