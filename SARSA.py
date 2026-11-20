@@ -30,3 +30,4 @@ for episode in range(episodes):
         print(f"Rendering env for episode = {episode + 1} / {episodes}")
     else:
         env = gym.make('CliffWalking-v1')
+    done = False
