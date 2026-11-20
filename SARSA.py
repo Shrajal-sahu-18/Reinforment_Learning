@@ -36,3 +36,5 @@ for episode in range(episodes):
 
     total_reward = 0
     episode_length = 0
+
+    while not done:
