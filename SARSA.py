@@ -24,3 +24,4 @@ def epsilon_greedy(state):
     else:
         np.argmax(Q[state])
 for episode in range(episodes):
+    render = (episode % 50 == 0)
