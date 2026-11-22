@@ -50,3 +50,4 @@ for episode in range(episodes):
 
         total_reward += reward
         episode_length += 1
+    print(f"Episode ==> {episode+1} / {episodes}: Total_reward = {total_reward} & Ep_length = {episode_length}")
