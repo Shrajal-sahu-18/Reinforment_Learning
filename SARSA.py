@@ -41,4 +41,7 @@ for episode in range(episodes):
         next_state,reward,terminated,truncated,_ = env.step(action)
         done = terminated or truncated
         next_action = epsilon_greedy(next_state)
+
+        # SARSA update
+        Q[state,action] += alpha * (reward + gamma *(Q[next_state,next_action] - Q[state,action]))
        
