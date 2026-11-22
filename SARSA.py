@@ -39,4 +39,5 @@ for episode in range(episodes):
 
     while not done:
         next_state,reward,terminated,truncated,_ = env.step(action)
+        done = terminated or truncated
        
