@@ -44,4 +44,5 @@ for episode in range(episodes):
 
         # SARSA update
         Q[state,action] += alpha * (reward + gamma *(Q[next_state,next_action] - Q[state,action]))
-       
+
+        state = next_state
