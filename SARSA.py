@@ -47,3 +47,5 @@ for episode in range(episodes):
 
         state = next_state
         action = next_action
+
+        total_reward += reward
