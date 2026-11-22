@@ -49,3 +49,4 @@ for episode in range(episodes):
         action = next_action
 
         total_reward += reward
+        episode_length += 1
