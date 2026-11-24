@@ -1,2 +1,5 @@
 # Reinforcement Learning
-This Repo contins reinforcement Learning
+```
+SARSA
+Q-Learning
+```
