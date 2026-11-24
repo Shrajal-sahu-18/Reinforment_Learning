@@ -10,3 +10,5 @@ episodes = 500
 Q = np.zeros((48,4))
 
 def epsilon_greedy(state):
+    if random.random() < epsilon:
+        return env.action_space.sample()
