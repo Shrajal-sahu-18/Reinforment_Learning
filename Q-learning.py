@@ -24,3 +24,4 @@ for episode in range(episodes):
     done = False
     state,_ = env.reset()
     total_reward = 0
+    episode_len = 0
