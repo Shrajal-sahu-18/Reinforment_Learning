@@ -28,3 +28,5 @@ for episode in range(episodes):
 
     while not done:
         action = epsilon_greedy(state)
+
+        next_state,reward,terminated,truncated,_ = env.step(action)
