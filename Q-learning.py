@@ -31,3 +31,5 @@ for episode in range(episodes):
 
         next_state,reward,terminated,truncated,_ = env.step(action)
         done = terminated or truncated
+
+        Q[state,action]  += alpha * (reward + gamma * np.max(Q[ next_state]) - Q[state,action])
