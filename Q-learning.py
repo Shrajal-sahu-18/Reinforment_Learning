@@ -14,3 +14,5 @@ def epsilon_greedy(state):
         return env.action_space.sample()
     else:
         return np.argmax(Q[state])
+
+for episode in range(episodes):
