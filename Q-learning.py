@@ -27,3 +27,4 @@ for episode in range(episodes):
     episode_len = 0
 
     while not done:
+        action = epsilon_greedy(state)
