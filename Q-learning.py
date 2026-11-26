@@ -34,3 +34,5 @@ for episode in range(episodes):
 
         Q[state,action]  += alpha * (reward + gamma * np.max(Q[ next_state]) - Q[state,action])
         state = next_state
+
+        episode_len += 1
