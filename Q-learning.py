@@ -46,3 +46,4 @@ state,_ = env.reset()
 total_reward = 0
 episode_len = 0
 done = False
+while not done:
