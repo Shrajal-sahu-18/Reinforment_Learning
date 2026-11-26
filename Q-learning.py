@@ -45,3 +45,4 @@ env = gym.make('CliffWalking-v1',render_mode = "human")
 state,_ = env.reset()
 total_reward = 0
 episode_len = 0
+done = False
