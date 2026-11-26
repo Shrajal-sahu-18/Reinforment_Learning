@@ -42,3 +42,4 @@ for episode in range(episodes):
     env.close()
 
 env = gym.make('CliffWalking-v1',render_mode = "human")
+state,_ = env.reset()
