@@ -39,3 +39,4 @@ for episode in range(episodes):
         total_reward += reward
 
     print(f"Episode ==> {episode+ 1} / {episodes} : Total_Reward ==> {total_reward} & Episode_len ==>{episode_len} ")
+    env.close()
