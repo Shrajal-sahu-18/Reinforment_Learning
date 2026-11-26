@@ -36,3 +36,4 @@ for episode in range(episodes):
         state = next_state
 
         episode_len += 1
+        total_reward += reward
