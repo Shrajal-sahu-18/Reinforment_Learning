@@ -40,3 +40,5 @@ for episode in range(episodes):
 
     print(f"Episode ==> {episode+ 1} / {episodes} : Total_Reward ==> {total_reward} & Episode_len ==>{episode_len} ")
     env.close()
+
+env = gym.make('CliffWalking-v1',render_mode = "human")
